@@ -9,7 +9,7 @@
       //arrange
       $test_RepeatCounter = new RepeatCounter;
       $first_input = "Hello";
-      $second_input = "hello world hello hello";
+      $second_input = "hello world hello hello, hello";
 
       //act
       $result = $test_RepeatCounter->CountRepeats($first_input, $second_input);
