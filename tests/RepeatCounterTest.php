@@ -14,7 +14,7 @@
       //act
       $result = $test_RepeatCounter->CountRepeats($first_input, $second_input);
 
-      $this->assertEquals(3, $result);
+      $this->assertEquals(4, $result);
     }
   }
 
