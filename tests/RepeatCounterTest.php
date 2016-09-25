@@ -25,9 +25,9 @@
       $second_input = "hello world hello hello hello";
 
       //act
-      $result = $test_RepeatCounter->CountRepeats($first_input, $second_input);
+      $result = $test_RepeatCounter->returnString($first_input, $second_input);
 
-      $this->assertEquals(4, $result);
+      $this->assertEquals($first_input, $result);
     }
   }
 
