@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-3.1.0.min.js" type="text/javascript"></script>
     <script src="js/bootstrap.min.js" type="text/javascript"></script>
     <script src="js/scripts.js" type="text/javascript"></script>
     <title>Word Counter</title>
 </head>
 <body>
+  <div class="jumbotron">
+    <h2>Word Counter</h2>
+    <hr>
+    <h4>Enter a word, then enter a sentence with that word in it. The computer will tell you how many times that word appears in that sentence (if at all).</h4>
+  </div>
     <div class="container">
-          <h2>Enter a word, then enter a sentence with that word in it. The computer will tell you how many times that word appears in that sentence.</h2>
           <form action="/counter" method="post">
-            <label for="word">Enter a word.</label>
+            <label for="word">Enter a word:</label>
             <input type="text" name="word">
-            <label for="sentence">Enter a sentence with no punctuation.</label>
+            <br>
+            <label for="sentence">Enter a sentence with no punctuation:</label>
             <input type="text" name="sentence">
+            <br>
             <button id="goButton" type="submit" class="btn btn-info">Go!</button>
         </form>
     </div>
