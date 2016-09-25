@@ -10,9 +10,12 @@
 </head>
 <body>
     <div class="container">
-        <form action="/counter" method="post">
-            <input type="text" name="word" placeholder="enter a word">
-            <input type="text" name="sentence" placeholder="enter a sentence">
+          <h2>Enter a word, then enter a sentence with that word in it. The computer will tell you how many times that word appears in that sentence.</h2>
+          <form action="/counter" method="post">
+            <label for="word">Enter a word.</label>
+            <input type="text" name="word">
+            <label for="sentence">Enter a sentence with no punctuation.</label>
+            <input type="text" name="sentence">
             <button id="goButton" type="submit" class="btn btn-info">Go!</button>
         </form>
     </div>

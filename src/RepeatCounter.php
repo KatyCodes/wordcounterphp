@@ -12,5 +12,10 @@
       }
       return $result;
     }
+
+    function returnString($first_input, $second_input)
+    {
+      return $first_input;
+    }
   }
  ?>
