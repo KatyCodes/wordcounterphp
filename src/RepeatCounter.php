@@ -3,16 +3,15 @@
   class RepeatCounter
   {
 
-    function CountRepeats($second_input, $first_input)
+    function CountRepeats($sentence, $word)
     {
-      $first_input = str_replace(array(',', '.', '?', '!'), '', $first_input);
-      $sentence = explode(" ", $first_input);
+      $sentence = str_replace(array(',', '.', '?', '!'), '', $sentence);
+      $sentence = explode(" ", $sentence);
       $result = 0;
 
-      var_dump($sentence);
        for($i=0; $i<count($sentence); $i++)
        {
-        if (strtolower($sentence[$i]) == strtolower($second_input))
+        if (strtolower($sentence[$i]) == strtolower($word))
         {
           $result += 1;
         }
